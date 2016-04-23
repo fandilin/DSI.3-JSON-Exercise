@@ -11,6 +11,7 @@ from pandas.io.json import json_normalize
 projects = pd.read_json('world_bank_projects.json')
 projects["countryshortname"].value_counts().head(10)
 ```
+####These are the 10 countries with the most projects.
 
 
 
@@ -251,6 +252,7 @@ themes.groupby('code').describe()
 ```python
 themes['name'].value_counts()
 ```
+####These are the project themes in order of project counts, with missing theme names counted as a seperate theme. "Rule of law" is the theme with the fewest projects.
 
 
 
@@ -621,6 +623,7 @@ filled
 ```python
 filled['name'].value_counts()
 ```
+####These are the project themes in order of project counts. "Rule of Law" is still the theme with fewest projects.
 
 
 
